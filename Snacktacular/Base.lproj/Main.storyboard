@@ -242,10 +242,14 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                         </buttonConfiguration>
                                     </button>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jxP-Mu-tX4">
+                                        <rect key="frame" x="0.0" y="62" width="414" height="180"/>
+                                    </mapView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="n9Y-gs-ct8" firstAttribute="top" secondItem="Egn-hn-VXh" secondAttribute="bottom" constant="4" id="2i5-im-h0Y"/>
+                                    <constraint firstItem="jxP-Mu-tX4" firstAttribute="leading" secondItem="9dQ-6k-IFc" secondAttribute="leading" id="2yc-qa-vbr"/>
                                     <constraint firstItem="QIX-bc-fsd" firstAttribute="top" secondItem="Egn-hn-VXh" secondAttribute="bottom" constant="4" id="4sd-ag-oDx"/>
                                     <constraint firstItem="lW9-lM-liR" firstAttribute="leading" secondItem="Mu0-2M-036" secondAttribute="trailing" id="8xQ-s3-jRs"/>
                                     <constraint firstItem="Egn-hn-VXh" firstAttribute="leading" secondItem="9dQ-6k-IFc" secondAttribute="leading" id="BWV-YB-MbB"/>
@@ -259,6 +263,9 @@
                                     <constraint firstAttribute="trailing" secondItem="BhB-W1-S4J" secondAttribute="trailing" constant="8" id="dxr-Oo-Ru3"/>
                                     <constraint firstItem="Mu0-2M-036" firstAttribute="leading" secondItem="9dQ-6k-IFc" secondAttribute="leading" constant="8" id="hKQ-tD-VrL"/>
                                     <constraint firstItem="agX-Ko-stD" firstAttribute="top" secondItem="9dQ-6k-IFc" secondAttribute="top" constant="8" id="hhh-fc-r4W"/>
+                                    <constraint firstAttribute="trailing" secondItem="jxP-Mu-tX4" secondAttribute="trailing" id="iru-lf-QkM"/>
+                                    <constraint firstItem="Egn-hn-VXh" firstAttribute="top" secondItem="jxP-Mu-tX4" secondAttribute="bottom" id="jaA-cy-dRq"/>
+                                    <constraint firstItem="jxP-Mu-tX4" firstAttribute="top" secondItem="BhB-W1-S4J" secondAttribute="bottom" constant="2" id="kEf-iA-H6R"/>
                                     <constraint firstAttribute="trailing" secondItem="n9Y-gs-ct8" secondAttribute="trailing" constant="8" id="mdw-w8-8kX"/>
                                     <constraint firstAttribute="trailing" secondItem="agX-Ko-stD" secondAttribute="trailing" constant="8" id="owL-g0-MGC"/>
                                     <constraint firstItem="BhB-W1-S4J" firstAttribute="top" secondItem="agX-Ko-stD" secondAttribute="bottom" constant="2" id="uDp-ne-rTk"/>
@@ -297,6 +304,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addressTextField" destination="BhB-W1-S4J" id="lr2-K0-dsS"/>
+                        <outlet property="mapView" destination="jxP-Mu-tX4" id="YlJ-8O-Nao"/>
                         <outlet property="nameTextField" destination="agX-Ko-stD" id="HLF-Zr-ptP"/>
                         <outlet property="ratingLabel" destination="lW9-lM-liR" id="3qx-Mv-05k"/>
                     </connections>
@@ -379,7 +387,7 @@
         <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="PrimaryColor">
-            <color red="0.92941176889999999" green="0.63137257099999999" blue="0.34901961679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.92900002002716064" green="0.63099998235702515" blue="0.34900000691413879" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
