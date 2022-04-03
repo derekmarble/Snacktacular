@@ -225,8 +225,8 @@
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="star.fill" catalog="system" title=" Rating" titleAlignment="center">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="star.fill" catalog="system" title=" Rating">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIX-bc-fsd">
@@ -238,8 +238,8 @@
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="camera.fill" catalog="system" title=" Photo" titleAlignment="center">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="camera.fill" catalog="system" title=" Photo">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                         </buttonConfiguration>
                                     </button>
                                 </subviews>
