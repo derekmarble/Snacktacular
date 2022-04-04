@@ -21,7 +21,6 @@
 		8511CB4327FA02710020D72C /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CB4227FA02710020D72C /* Spot.swift */; };
 		8511CB4527FA0E040020D72C /* UIViewController + alert .swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CB4427FA0E040020D72C /* UIViewController + alert .swift */; };
 		8511CB4727FA14700020D72C /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CB4627FA14700020D72C /* Spots.swift */; };
-		8511CB4927FA23DA0020D72C /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511CB4827FA23DA0020D72C /* APIKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +40,6 @@
 		8511CB4227FA02710020D72C /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
 		8511CB4427FA0E040020D72C /* UIViewController + alert .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController + alert .swift"; sourceTree = "<group>"; };
 		8511CB4627FA14700020D72C /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
-		8511CB4827FA23DA0020D72C /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		E83C340178C9FC36786616B8 /* Pods-Snacktacular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular.release.xcconfig"; path = "Target Support Files/Pods-Snacktacular/Pods-Snacktacular.release.xcconfig"; sourceTree = "<group>"; };
 		F70686CA0D0E0A4AF02001AD /* Pods-Snacktacular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular.debug.xcconfig"; path = "Target Support Files/Pods-Snacktacular/Pods-Snacktacular.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,7 +86,6 @@
 				8511CB4027F64C760020D72C /* SpotDetailViewController.swift */,
 				8511CB3E27F647950020D72C /* SpotTableViewCell.swift */,
 				8511CB4427FA0E040020D72C /* UIViewController + alert .swift */,
-				8511CB4827FA23DA0020D72C /* APIKeys.swift */,
 				8511CB2C27F4EA700020D72C /* Main.storyboard */,
 				8511CB2F27F4EA730020D72C /* Assets.xcassets */,
 				8511CB3127F4EA730020D72C /* LaunchScreen.storyboard */,
@@ -255,7 +252,6 @@
 				8511CB2727F4EA700020D72C /* AppDelegate.swift in Sources */,
 				8511CB4727FA14700020D72C /* Spots.swift in Sources */,
 				8511CB4127F64C760020D72C /* SpotDetailViewController.swift in Sources */,
-				8511CB4927FA23DA0020D72C /* APIKeys.swift in Sources */,
 				8511CB3F27F647950020D72C /* SpotTableViewCell.swift in Sources */,
 				8511CB4327FA02710020D72C /* Spot.swift in Sources */,
 				8511CB2927F4EA700020D72C /* SceneDelegate.swift in Sources */,
