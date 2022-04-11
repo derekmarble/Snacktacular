@@ -42,6 +42,13 @@ class SpotDetailViewController: UIViewController {
         updateUserInterface()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        reviews.loadData(spot: spot) {
+            self.tableView.reloadData()
+        }
+    }
+    
     func setupMapView() {
         let region = MKCoordinateRegion(center: spot.coordinate, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
         mapView.setRegion(region, animated: true)
@@ -82,6 +89,19 @@ class SpotDetailViewController: UIViewController {
         spot.address = addressTextField.text!
     }
     
+    func saveCancelAlert(title: String, message: String, segueIdentifier: String) {
+        let alertcontroller = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let saveAction = UIAlertAction(title: "Save", style: .default) { (_) in
+            self.spot.saveData { (success) in
+                self.performSegue(withIdentifier: segueIdentifier, sender: nil)
+            }
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertcontroller.addAction(saveAction)
+        alertcontroller.addAction(cancelAction)
+        present(alertcontroller, animated: true, completion: nil)
+    }
+    
     func leaveViewController() {
         let isPresentingInAddMode = presentingViewController is UINavigationController
         if isPresentingInAddMode {
@@ -112,7 +132,12 @@ class SpotDetailViewController: UIViewController {
         
     }
     @IBAction func ratingButtonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "AddReview", sender: nil)
+        if spot.documentID == "" {
+            saveCancelAlert(title: "This Venue has not been Saved", message: "You must save this venue before you can review it", segueIdentifier: "AddReview")
+        } else {
+            performSegue(withIdentifier: "AddReview", sender: nil)
+        }
+        
     }
 }
 extension SpotDetailViewController: GMSAutocompleteViewControllerDelegate {
@@ -226,7 +251,8 @@ extension SpotDetailViewController: UITableViewDelegate, UITableViewDataSource {
     }
   
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewCell", for: indexPath) as! SpotReviewTableViewCell
+        cell.review = reviews.reviewArray[indexPath.row]
         return cell
     }
     
