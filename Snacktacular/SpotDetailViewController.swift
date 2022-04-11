@@ -24,6 +24,12 @@ class SpotDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //hide keyboard if we tap out of a field
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -85,6 +91,9 @@ class SpotDetailViewController: UIViewController {
         // Display the autocomplete view controller.
         present(autocompleteController, animated: true, completion: nil)
         
+    }
+    @IBAction func ratingButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "AddReview", sender: nil)
     }
 }
 extension SpotDetailViewController: GMSAutocompleteViewControllerDelegate {
