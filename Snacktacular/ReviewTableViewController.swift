@@ -6,6 +6,14 @@
 //
 
 import UIKit
+import Firebase
+
+private let dateFormatter: DateFormatter = {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateStyle = .medium
+    dateFormatter.timeStyle = .none
+    return dateFormatter
+} ()
 
 class ReviewTableViewController: UITableViewController {
 
@@ -52,12 +60,43 @@ class ReviewTableViewController: UITableViewController {
         reviewTitleField.text = review.title
         reviewTextView.text = review.text
         rating = review.rating // will update rating stars on load
+        reviewDateLabel.text = "Posted: \(dateFormatter.string(from: review.date))"
+        if review.documentID == "" { //this is a new review
+            addBordersToEditableObjects()
+        } else {
+            if review.reviewUserID == Auth.auth().currentUser?.uid { // review posted by the current user
+                self.navigationItem.leftItemsSupplementBackButton = false
+                saveBarButton.title = "Update"
+                addBordersToEditableObjects()
+                deleteButton.isHidden = false
+            } else { // review added by a different user
+                saveBarButton.hide()
+                cancelBarButton.hide()
+                
+                postedByLabel.text = "Posted by: \(review.reviewUserEmail)"
+                for starButton in starButtonCollection {
+                    starButton.backgroundColor = .white
+                    starButton.isEnabled = false
+                }
+                reviewTitleField.isEnabled = false
+                reviewTitleField.borderStyle = .none
+                reviewTextView.isEditable = false
+                reviewTitleField.backgroundColor = .white
+                reviewTextView.backgroundColor = .white
+            }
+        }
     }
     
     func updateFromUserInterface() {
         review.title = reviewTitleField.text!
         review.text = reviewTextView.text!
         
+    }
+    
+    func addBordersToEditableObjects() {
+        reviewTitleField.addBorder(width: 0.5, radius: 5.0, color: .black)
+        reviewTextView.addBorder(width: 0.5, radius: 5.0, color: .black)
+        buttonsBackgroundView.addBorder(width: 0.5, radius: 5.0, color: .black)
     }
     
     func leaveViewController() {

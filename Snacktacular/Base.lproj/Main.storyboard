@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kul-s7-Cz5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kul-s7-Cz5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -509,7 +509,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="iwp-Do-Lv7">
                                                     <rect key="frame" x="103" y="25" width="208" height="40"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjX-hY-jdC">
+                                                        <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjX-hY-jdC">
                                                             <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
@@ -525,7 +525,7 @@
                                                                 <action selector="starButtonPressed:" destination="zKE-Bk-ro5" eventType="touchUpInside" id="aBu-Uo-Xdk"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HV-ZV-JXe">
+                                                        <button opaque="NO" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HV-ZV-JXe">
                                                             <rect key="frame" x="42" y="0.0" width="40" height="40"/>
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
@@ -541,7 +541,7 @@
                                                                 <action selector="starButtonPressed:" destination="zKE-Bk-ro5" eventType="touchUpInside" id="G6T-4Q-cZX"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVJ-7X-x5X">
+                                                        <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVJ-7X-x5X">
                                                             <rect key="frame" x="84" y="0.0" width="40" height="40"/>
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
@@ -557,7 +557,7 @@
                                                                 <action selector="starButtonPressed:" destination="zKE-Bk-ro5" eventType="touchUpInside" id="jL6-4S-3o6"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" tag="3" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHD-c1-aod">
+                                                        <button opaque="NO" tag="3" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHD-c1-aod">
                                                             <rect key="frame" x="126" y="0.0" width="40" height="40"/>
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
@@ -573,7 +573,7 @@
                                                                 <action selector="starButtonPressed:" destination="zKE-Bk-ro5" eventType="touchUpInside" id="ONR-I7-KEx"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" tag="4" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQM-tq-s27">
+                                                        <button opaque="NO" tag="4" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQM-tq-s27">
                                                             <rect key="frame" x="168" y="0.0" width="40" height="40"/>
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
@@ -619,7 +619,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWI-cB-pai">
-                                                    <rect key="frame" x="8" y="12" width="81.5" height="24"/>
+                                                    <rect key="frame" x="8" y="10" width="81.5" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="3zU-zR-QIG"/>
                                                         <constraint firstAttribute="width" constant="81.5" id="fBG-Yl-87n"/>
@@ -629,7 +629,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title of Review" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aO0-zp-rMM">
-                                                    <rect key="frame" x="92.5" y="5" width="313.5" height="34"/>
+                                                    <rect key="frame" x="97.5" y="5" width="308.5" height="34"/>
                                                     <color key="backgroundColor" name="UI Element Background"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="34" id="ebk-JV-vin"/>
@@ -645,9 +645,9 @@
                                             <constraints>
                                                 <constraint firstItem="dWI-cB-pai" firstAttribute="leading" secondItem="Jbb-b9-nRS" secondAttribute="leading" constant="8" id="Cga-f7-yos"/>
                                                 <constraint firstItem="aO0-zp-rMM" firstAttribute="top" secondItem="Jbb-b9-nRS" secondAttribute="top" constant="5" id="EzU-1r-I18"/>
-                                                <constraint firstItem="dWI-cB-pai" firstAttribute="top" secondItem="Jbb-b9-nRS" secondAttribute="top" constant="12" id="LNu-2R-w56"/>
+                                                <constraint firstItem="dWI-cB-pai" firstAttribute="top" secondItem="Jbb-b9-nRS" secondAttribute="top" constant="10" id="LNu-2R-w56"/>
                                                 <constraint firstAttribute="trailing" secondItem="aO0-zp-rMM" secondAttribute="trailing" constant="8" id="MDS-1A-gZY"/>
-                                                <constraint firstItem="aO0-zp-rMM" firstAttribute="leading" secondItem="dWI-cB-pai" secondAttribute="trailing" constant="3" id="wJh-cF-iSp"/>
+                                                <constraint firstItem="aO0-zp-rMM" firstAttribute="leading" secondItem="dWI-cB-pai" secondAttribute="trailing" constant="8" id="wJh-cF-iSp"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -683,19 +683,17 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Your amazing review will go here!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LGu-gn-kOg">
-                                                    <rect key="frame" x="28" y="50" width="358" height="240"/>
+                                                    <rect key="frame" x="28" y="50" width="358" height="220"/>
                                                     <color key="backgroundColor" name="UI Element Background"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="240" id="XCL-CN-vHG"/>
-                                                    </constraints>
                                                     <color key="textColor" systemColor="labelColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="vr4-gw-yd9" firstAttribute="top" secondItem="M30-5A-UKj" secondAttribute="topMargin" constant="12" id="3fu-Cc-8sn"/>
                                                 <constraint firstItem="vr4-gw-yd9" firstAttribute="leading" secondItem="M30-5A-UKj" secondAttribute="leadingMargin" constant="8" id="F7D-Pj-49h"/>
+                                                <constraint firstAttribute="bottom" secondItem="LGu-gn-kOg" secondAttribute="bottom" constant="8" id="UJL-1E-gEq"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="OpK-GP-knD" secondAttribute="trailing" constant="8" id="dqG-WP-saL"/>
                                                 <constraint firstItem="LGu-gn-kOg" firstAttribute="top" secondItem="vr4-gw-yd9" secondAttribute="bottom" constant="3" id="gau-6n-EHQ"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="LGu-gn-kOg" secondAttribute="trailing" constant="8" id="ihX-rc-0Xi"/>
@@ -752,7 +750,7 @@
                                 <action selector="cancelButtonPressed:" destination="zKE-Bk-ro5" id="exB-FC-04f"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="6kT-Yy-WTU">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="6kT-Yy-WTU">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="saveButtonPressed:" destination="zKE-Bk-ro5" id="WNQ-p0-fLd"/>
