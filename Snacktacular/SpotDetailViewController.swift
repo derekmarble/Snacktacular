@@ -81,6 +81,16 @@ class SpotDetailViewController: UIViewController {
             let selectedIndexPath = tableView.indexPathForSelectedRow!
             destination.review = reviews.reviewArray[selectedIndexPath.row]
             destination.spot = spot
+        case "AddPhoto":
+            let navigationController = segue.destination as! UINavigationController
+            let destination = navigationController.viewControllers.first as! PhotoViewController
+            destination.spot = spot
+        case "ShowPhoto":
+            let destination = segue.destination as! PhotoViewController
+//            TODO: replace code below with collection view code
+//            let selectedIndexPath = tableView.indexPathForSelectedRow!
+//            destination.review = reviews.reviewArray[selectedIndexPath.row]
+            destination.spot = spot
         default :
             print("Could not find a case for that segue identifier")
         }
@@ -172,6 +182,14 @@ class SpotDetailViewController: UIViewController {
         }
         
     }
+    @IBAction func photoButtonPressed(_ sender: UIButton) {
+        if spot.documentID == "" {
+            saveCancelAlert(title: "This Venue has not been Saved", message: "You must save this venue before you can review it", segueIdentifier: "AddPhoto")
+        } else {
+            performSegue(withIdentifier: "AddPhoto", sender: nil)
+        }
+    }
+    
 }
 extension SpotDetailViewController: GMSAutocompleteViewControllerDelegate {
 
