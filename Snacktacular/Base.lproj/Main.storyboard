@@ -167,14 +167,19 @@
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Restaurant Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="agX-Ko-stD">
                                             <rect key="frame" x="8" y="8" width="398" height="33"/>
+                                            <color key="backgroundColor" name="UI Element Background"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="33" id="4xc-29-88a"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="24"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="nameFieldChanged:" destination="3xB-El-gMN" eventType="editingChanged" id="QBy-WL-Ywd"/>
+                                            </connections>
                                         </textField>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="address" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BhB-W1-S4J">
                                             <rect key="frame" x="8" y="43" width="398" height="17"/>
+                                            <color key="backgroundColor" name="UI Element Background"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="17" id="rJq-JT-yfe"/>
                                             </constraints>
@@ -400,13 +405,13 @@
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" id="S72-ES-2sG">
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="S72-ES-2sG">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="OiX-rB-1M4">
                             <connections>
                                 <action selector="cancelButtonPressed:" destination="3xB-El-gMN" id="Cpq-X5-LSv"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="2MH-JH-beN">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="2MH-JH-beN">
                             <connections>
                                 <action selector="saveButtonPressed:" destination="3xB-El-gMN" id="mJc-YS-Oxf"/>
                             </connections>
@@ -415,9 +420,11 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addressTextField" destination="BhB-W1-S4J" id="lr2-K0-dsS"/>
+                        <outlet property="cancelBarButton" destination="OiX-rB-1M4" id="AUR-4W-WmH"/>
                         <outlet property="mapView" destination="jxP-Mu-tX4" id="YlJ-8O-Nao"/>
                         <outlet property="nameTextField" destination="agX-Ko-stD" id="HLF-Zr-ptP"/>
                         <outlet property="ratingLabel" destination="lW9-lM-liR" id="3qx-Mv-05k"/>
+                        <outlet property="saveBarButton" destination="2MH-JH-beN" id="3oJ-lv-TVn"/>
                         <outlet property="tableView" destination="EFd-BW-Y27" id="Hhb-Pe-1vl"/>
                         <segue destination="0kT-XV-ayt" kind="presentation" identifier="AddReview" modalPresentationStyle="fullScreen" id="jVM-fk-BtH"/>
                     </connections>
