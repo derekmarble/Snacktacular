@@ -110,7 +110,7 @@
                     </view>
                     <toolbarItems>
                         <barButtonItem style="plain" id="VpM-gU-RTF">
-                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="kli-DS-Ahk">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="kli-DS-Ahk">
                                 <rect key="frame" x="20" y="10.5" width="374" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="PrimaryColor"/>
@@ -801,13 +801,56 @@
                     <view key="view" contentMode="scaleToFill" id="eRe-sL-wl1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="itq-jT-Pwx">
+                                <rect key="frame" x="8" y="96" width="398" height="14.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="By: Baylor Wallace" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qT-LT-uIG">
+                                        <rect key="frame" x="0.0" y="0.0" width="319" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="on: 11/22/63" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPI-NX-gCA">
+                                        <rect key="frame" x="327" y="0.0" width="71" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This describes my meal. Scroll if you'd like to see more..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TaP-Ks-vzO">
+                                <rect key="frame" x="8" y="118" width="398" height="36"/>
+                                <color key="backgroundColor" name="UI Element Background"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="fO1-Qm-YbS"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vt2-lx-5XH">
+                                <rect key="frame" x="0.0" y="162" width="414" height="643"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tF8-Im-Eln"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vt2-lx-5XH" firstAttribute="top" secondItem="TaP-Ks-vzO" secondAttribute="bottom" constant="8" id="5X0-22-cc9"/>
+                            <constraint firstItem="vt2-lx-5XH" firstAttribute="leading" secondItem="tF8-Im-Eln" secondAttribute="leading" id="5eQ-pb-JDg"/>
+                            <constraint firstItem="itq-jT-Pwx" firstAttribute="top" secondItem="tF8-Im-Eln" secondAttribute="top" constant="8" id="DR1-mN-a5l"/>
+                            <constraint firstItem="vt2-lx-5XH" firstAttribute="trailing" secondItem="tF8-Im-Eln" secondAttribute="trailing" id="Ob0-5g-MUy"/>
+                            <constraint firstItem="TaP-Ks-vzO" firstAttribute="leading" secondItem="tF8-Im-Eln" secondAttribute="leading" constant="8" id="T7I-2p-FjS"/>
+                            <constraint firstItem="tF8-Im-Eln" firstAttribute="trailing" secondItem="itq-jT-Pwx" secondAttribute="trailing" constant="8" id="aGQ-jj-Ac9"/>
+                            <constraint firstItem="itq-jT-Pwx" firstAttribute="leading" secondItem="tF8-Im-Eln" secondAttribute="leading" constant="8" id="f9G-Kw-KOG"/>
+                            <constraint firstItem="tF8-Im-Eln" firstAttribute="trailing" secondItem="TaP-Ks-vzO" secondAttribute="trailing" constant="8" id="sh9-O2-944"/>
+                            <constraint firstItem="TaP-Ks-vzO" firstAttribute="top" secondItem="itq-jT-Pwx" secondAttribute="bottom" constant="7.5" id="tkF-bm-mhV"/>
+                            <constraint firstItem="tF8-Im-Eln" firstAttribute="bottom" secondItem="vt2-lx-5XH" secondAttribute="bottom" constant="8" id="yH4-ET-8Ye"/>
+                        </constraints>
                     </view>
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="mfA-Nc-wG8"/>
                         <barButtonItem systemItem="trash" id="qmN-7d-mxD">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="deleteButtonPressed:" destination="OVQ-x0-NSh" id="Tcq-Hs-nQQ"/>
                             </connections>
@@ -828,13 +871,17 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
                         <outlet property="cancelBarButton" destination="8Yv-lf-s0e" id="VyK-nT-Hf3"/>
+                        <outlet property="dateLabel" destination="LPI-NX-gCA" id="dR7-cv-Zuf"/>
                         <outlet property="deleteBarButton" destination="qmN-7d-mxD" id="GHa-Zg-QvK"/>
+                        <outlet property="descriptionTextView" destination="TaP-Ks-vzO" id="I4g-ag-OvQ"/>
+                        <outlet property="photoImageView" destination="vt2-lx-5XH" id="znc-iq-vVm"/>
+                        <outlet property="postedByLabel" destination="0qT-LT-uIG" id="Ex3-Gl-s5C"/>
                         <outlet property="saveBarButton" destination="hoS-xT-lJu" id="p2J-WH-NrT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="orF-Ox-1KX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5393" y="812"/>
+            <point key="canvasLocation" x="5391.304347826087" y="810.9375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FHX-55-Ymf">
