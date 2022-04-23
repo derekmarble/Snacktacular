@@ -63,7 +63,7 @@ class SpotsListViewController: UIViewController {
         case 1: //closest
             spots.spotArray.sort(by: {$0.location.distance(from: currentLocation) < $1.location.distance(from: currentLocation)})
         case 2: //averageRating
-            print("TODO")
+            spots.spotArray.sort(by: {$0.averageRating > $1.averageRating})
         default:
             print("Check segmented control for an error!")
         }
