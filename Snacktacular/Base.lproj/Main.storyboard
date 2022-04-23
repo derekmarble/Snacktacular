@@ -110,7 +110,7 @@
                     </view>
                     <toolbarItems>
                         <barButtonItem style="plain" id="VpM-gU-RTF">
-                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="kli-DS-Ahk">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="kli-DS-Ahk">
                                 <rect key="frame" x="20" y="10.5" width="374" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="PrimaryColor"/>
@@ -199,14 +199,30 @@
                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             </collectionViewFlowLayout>
                                             <cells>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="INs-QN-rPF">
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="INs-QN-rPF" customClass="SpotPhotoCollectionViewCell" customModule="Snacktacular" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Bd9-gP-ZDk">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                         <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ySY-g9-4KP">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="100" id="mXR-NN-VYH"/>
+                                                                    <constraint firstAttribute="width" constant="100" id="maF-M0-kB7"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="ySY-g9-4KP" secondAttribute="bottom" id="9xR-yJ-lJE"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ySY-g9-4KP" secondAttribute="trailing" id="Ctc-xd-Nc8"/>
+                                                            <constraint firstItem="ySY-g9-4KP" firstAttribute="top" secondItem="Bd9-gP-ZDk" secondAttribute="top" id="PVw-in-qFk"/>
+                                                            <constraint firstItem="ySY-g9-4KP" firstAttribute="leading" secondItem="Bd9-gP-ZDk" secondAttribute="leading" id="lqH-5j-J3b"/>
+                                                        </constraints>
                                                     </collectionViewCellContentView>
                                                     <connections>
+                                                        <outlet property="photoImageView" destination="ySY-g9-4KP" id="4Wv-Zk-DqX"/>
                                                         <segue destination="OVQ-x0-NSh" kind="show" identifier="ShowPhoto" id="vaG-Gu-Tb1"/>
                                                     </connections>
                                                 </collectionViewCell>
@@ -427,6 +443,7 @@
                     <connections>
                         <outlet property="addressTextField" destination="BhB-W1-S4J" id="lr2-K0-dsS"/>
                         <outlet property="cancelBarButton" destination="OiX-rB-1M4" id="AUR-4W-WmH"/>
+                        <outlet property="collectionView" destination="Egn-hn-VXh" id="7fL-4Q-je3"/>
                         <outlet property="mapView" destination="jxP-Mu-tX4" id="YlJ-8O-Nao"/>
                         <outlet property="nameTextField" destination="agX-Ko-stD" id="HLF-Zr-ptP"/>
                         <outlet property="ratingLabel" destination="lW9-lM-liR" id="3qx-Mv-05k"/>
