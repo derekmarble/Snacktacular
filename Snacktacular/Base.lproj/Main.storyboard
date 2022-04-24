@@ -58,7 +58,7 @@
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance 9999.9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHD-Vy-LoY">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Distance 9999.9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHD-Vy-LoY">
                                                     <rect key="frame" x="16" y="38" width="160" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="18" id="g3D-cf-rGK"/>
@@ -71,7 +71,8 @@
                                                     <rect key="frame" x="257" y="38" width="149" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="18" id="E1Y-AR-jWw"/>
-                                                        <constraint firstAttribute="width" constant="149" id="uMB-9v-CyR"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="149" id="fzb-zo-4KN"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="149" id="uMB-9v-CyR"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
@@ -203,7 +204,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dec. 22, 2100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsR-dk-nTT">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Dec. 22, 2100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsR-dk-nTT">
                                                     <rect key="frame" x="164" y="54" width="242" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="n5D-7J-UYs"/>
@@ -216,7 +217,7 @@
                                                     <rect key="frame" x="86" y="55" width="70" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="2ex-dW-EDf"/>
-                                                        <constraint firstAttribute="width" constant="70" id="nv4-eY-QfG"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="nv4-eY-QfG"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -359,7 +360,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_._" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lW9-lM-liR">
                                             <rect key="frame" x="70.5" y="348" width="45" height="26"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="45" id="Pfq-tk-QNu"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="Pfq-tk-QNu"/>
                                                 <constraint firstAttribute="height" constant="26" id="qCx-Ls-zkG"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="22"/>
@@ -370,7 +371,7 @@
                                             <rect key="frame" x="307.5" y="346" width="98.5" height="29"/>
                                             <color key="backgroundColor" name="PrimaryColor"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="98.5" id="lqv-Zb-Bah"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98.5" id="lqv-Zb-Bah"/>
                                                 <constraint firstAttribute="height" constant="29" id="sXb-ah-RP3"/>
                                             </constraints>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -387,7 +388,7 @@
                                             <color key="backgroundColor" name="PrimaryColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="29" id="X9I-it-N7h"/>
-                                                <constraint firstAttribute="width" constant="97.5" id="rB3-hf-Yu9"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="97.5" id="rB3-hf-Yu9"/>
                                             </constraints>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" title="Button"/>
@@ -417,6 +418,7 @@
                                         <constraint firstItem="n9Y-gs-ct8" firstAttribute="leading" secondItem="QIX-bc-fsd" secondAttribute="trailing" constant="8" id="cWX-0K-3xn"/>
                                         <constraint firstItem="agX-Ko-stD" firstAttribute="leading" secondItem="9dQ-6k-IFc" secondAttribute="leading" constant="8" id="cmT-cn-uym"/>
                                         <constraint firstAttribute="trailing" secondItem="BhB-W1-S4J" secondAttribute="trailing" constant="8" id="dxr-Oo-Ru3"/>
+                                        <constraint firstItem="QIX-bc-fsd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lW9-lM-liR" secondAttribute="trailing" constant="8" symbolic="YES" id="fxV-dQ-hS8"/>
                                         <constraint firstItem="Mu0-2M-036" firstAttribute="leading" secondItem="9dQ-6k-IFc" secondAttribute="leading" constant="8" id="hKQ-tD-VrL"/>
                                         <constraint firstItem="agX-Ko-stD" firstAttribute="top" secondItem="9dQ-6k-IFc" secondAttribute="top" constant="8" id="hhh-fc-r4W"/>
                                         <constraint firstAttribute="trailing" secondItem="jxP-Mu-tX4" secondAttribute="trailing" id="iru-lf-QkM"/>
@@ -488,7 +490,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of Review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DO1-UC-SGK">
                                                     <rect key="frame" x="95" y="3" width="311" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="311" id="IF1-1k-Xc0"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="311" id="IF1-1k-Xc0"/>
                                                         <constraint firstAttribute="height" constant="21" id="e67-zM-drl"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
@@ -664,7 +666,7 @@
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="40" id="fFe-Z5-FNr"/>
-                                                                <constraint firstAttribute="width" constant="40" id="nec-EU-Tyq"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="nec-EU-Tyq"/>
                                                             </constraints>
                                                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" title="Button"/>
@@ -680,7 +682,7 @@
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="40" id="3p1-Hy-JJq"/>
-                                                                <constraint firstAttribute="width" constant="40" id="zMR-2V-qrl"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="zMR-2V-qrl"/>
                                                             </constraints>
                                                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" title="Button"/>
@@ -695,7 +697,7 @@
                                                             <rect key="frame" x="84" y="0.0" width="40" height="40"/>
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="40" id="ARp-Wf-1Zh"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="ARp-Wf-1Zh"/>
                                                                 <constraint firstAttribute="height" constant="40" id="Q1q-58-Ul3"/>
                                                             </constraints>
                                                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -712,7 +714,7 @@
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="40" id="2VX-GD-YKF"/>
-                                                                <constraint firstAttribute="width" constant="40" id="v9F-Hq-CKk"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="v9F-Hq-CKk"/>
                                                             </constraints>
                                                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" title="Button"/>
@@ -728,7 +730,7 @@
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="40" id="cSR-f0-zBy"/>
-                                                                <constraint firstAttribute="width" constant="40" id="rU9-Hh-ely"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="rU9-Hh-ely"/>
                                                             </constraints>
                                                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" title="Button"/>
@@ -772,7 +774,7 @@
                                                     <rect key="frame" x="8" y="10" width="81.5" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="3zU-zR-QIG"/>
-                                                        <constraint firstAttribute="width" constant="81.5" id="fBG-Yl-87n"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="81.5" id="fBG-Yl-87n"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -815,7 +817,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vr4-gw-yd9">
                                                     <rect key="frame" x="28" y="23" width="51" height="24"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="51" id="Pzq-fv-CK1"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="51" id="Pzq-fv-CK1"/>
                                                         <constraint firstAttribute="height" constant="24" id="kJ0-2M-YGE"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
@@ -825,7 +827,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posted: Dec. 32, 1875" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OpK-GP-knD">
                                                     <rect key="frame" x="211" y="23" width="175" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="175" id="CrR-zH-5sa"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="CrR-zH-5sa"/>
                                                         <constraint firstAttribute="height" constant="21" id="vvc-1N-07m"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Italic" family="Avenir Next Condensed" pointSize="17"/>
@@ -843,6 +845,7 @@
                                             <constraints>
                                                 <constraint firstItem="vr4-gw-yd9" firstAttribute="top" secondItem="M30-5A-UKj" secondAttribute="topMargin" constant="12" id="3fu-Cc-8sn"/>
                                                 <constraint firstItem="vr4-gw-yd9" firstAttribute="leading" secondItem="M30-5A-UKj" secondAttribute="leadingMargin" constant="8" id="F7D-Pj-49h"/>
+                                                <constraint firstItem="OpK-GP-knD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vr4-gw-yd9" secondAttribute="trailing" constant="8" symbolic="YES" id="PKO-nV-ido"/>
                                                 <constraint firstAttribute="bottom" secondItem="LGu-gn-kOg" secondAttribute="bottom" constant="8" id="UJL-1E-gEq"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="OpK-GP-knD" secondAttribute="trailing" constant="8" id="dqG-WP-saL"/>
                                                 <constraint firstItem="LGu-gn-kOg" firstAttribute="top" secondItem="vr4-gw-yd9" secondAttribute="bottom" constant="3" id="gau-6n-EHQ"/>
@@ -867,7 +870,7 @@
                                                     <rect key="frame" x="112" y="8" width="190" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="05E-78-3Ve"/>
-                                                        <constraint firstAttribute="width" constant="190" id="poX-Lf-5LF"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="190" id="poX-Lf-5LF"/>
                                                     </constraints>
                                                     <color key="tintColor" systemColor="systemRedColor"/>
                                                     <state key="normal" title="Button"/>
