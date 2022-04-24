@@ -74,6 +74,9 @@ class SpotsListViewController: UIViewController {
     @IBAction func sortSegmentPressed(_ sender: UISegmentedControl) {
         sortBasedOnSegmentPressed()
     }
+    @IBAction func usersButtonPressed(_ sender: UIBarButtonItem) {
+    }
+    
 }
 extension SpotsListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
